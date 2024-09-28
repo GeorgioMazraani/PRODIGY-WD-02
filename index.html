@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Stopwatch</h1>
+    </header>
+
+    <!-- Stopwatch Section -->
+    <div class="stopwatch">
+        <div class="time">
+            <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="centiseconds">00</span>
+        </div>
+        <div class="labels">
+            <span>Minutes</span> <span>Seconds</span> <span>Centiseconds</span>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="control-btn">Start</button>
+            <button id="pause-btn" class="control-btn" style="display: none;">Pause</button>
+            <button id="lap-btn" class="control-btn" style="display: none;">Lap</button>
+            <button id="reset-btn" class="control-btn" style="display: none;">Reset</button>
+        </div>
+
+        <!-- Lap Information Section -->
+        <div class="lap-header lap">
+            <span>Lap</span> <span>Lap Time</span>
+        </div>
+
+        <!-- This section will be dynamically populated with lap data -->
+        <div id="lap-times-container"></div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Created by Georgio Mazraani| © 2024</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
